@@ -1,0 +1,123 @@
+:root {
+    --gray-light: #A9A9A9;
+    --gray-dark: #343434;
+    --yellow: #ff9900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #373737;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: black;
+    max-width: 20.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 3.4rem;
+}
+
+.calculator_result {
+    margin-top: 9.5rem;
+    color: white;
+
+    padding-right: calc(1.7rem / 2);
+    text-align: end;
+    font-size: 5.03rem;
+}
+
+.calculator_functions {
+    margin-top: 2.52rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.calculator_functions_container button {
+  
+
+}
+
+.calculator_functions_button_light {
+    background: var(--gray-light);
+    color: black;
+
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+
+    border: none;
+    font-size: 1.8011rem;
+}
+
+.calculator_functions_button_yellow {
+    background: var(--yellow);
+    color: white;
+
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+
+    border: none;
+    font-size: 1.8011rem;
+}
+
+.calculator_functions_button_normal {
+    background: var(--gray-dark);
+    color: white;
+
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+
+    border: none;
+    font-size: 1.8011rem;
+}
+
+.calculator_functions_footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.6rem;
+    width: 100%;
+    margin-left: 0.25rem;
+    margin-top: 0.6rem;
+}
+
+.button_zero {
+    background: var(--gray-dark);
+    color: white;
+    width: 100% !important;
+    border-radius: 2.1rem;
+    font-size: 1.8rem;
+    border: none;
+    text-align: start;
+    padding-left: 1.45rem;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
